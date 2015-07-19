@@ -1,0 +1,43 @@
+<div class="col-sm-6 col-md-4">
+
+    <div class="panel panel-info box-shadow">
+        <div class="panel-heading">
+            <p class="panel-title ">
+                <a href="#" editable-text="user.name">{{ user.name || 'empty' }}</a>
+            </p>
+        </div>
+
+        <div class="panel-body visible-md-block visible-lg-block">
+            <div class="bs-example" data-example-id="simple-dl">
+                <dl>
+                    <dt>Werte</dt>
+                    <dd>25° C mittlere Raumtemperatur</dd>
+
+                    <dt>Raum</dt>
+                    <dd>Arbeitszimmer</dd>
+
+                    <accordion close-others="oneAtATime">
+                        <accordion-group is-open="status.open">
+                            <accordion-heading>
+                                Beschreibung <i class="pull-right glyphicon" ng-class="{'glyphicon-chevron-down': status.open, 'glyphicon-chevron-right': !status.open}"></i>
+                            </accordion-heading>
+                            This is just some content to illustrate fancy headings.
+                            This is just some content to illustrate fancy headings.
+                            This is just some content to illustrate fancy headings.
+                            This is just some content to illustrate fancy headings.
+                            This is just some content to illustrate fancy headings.
+                        </accordion-group>
+
+                    </accordion>
+                </dl>
+            </div>
+        </div>
+        <div class="panel-body visible-sm-block visible-xs-block">
+            Kurze Kurzbezeichnung
+        </div>
+
+        <div class="panel-footer">
+
+        </div>
+    </div>
+</div>

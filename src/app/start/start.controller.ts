@@ -3,7 +3,7 @@
 module myIoTapp {
   'use strict';
 
-  export class MainController {
+  export class StartController {
     public awesomeThings: ITecThing[];
     public webDevTec: WebDevTecService;
     public classAnimation: string;
