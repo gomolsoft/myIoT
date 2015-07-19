@@ -1,0 +1,90 @@
+<div class="col-sm-6 col-md-4">
+
+    <!--div class="panel panel-info box-shadow">
+        <div class="panel-heading">
+            <p class="panel-title ">
+                    <a href="#" editable-text="vm.component.name">{{ vm.component.name || 'empty' }}</a>
+            </p>
+        </div>
+
+        <div class="panel-body visible-md-block visible-lg-block">
+            <div data-ng-bind="vm.component.description.long" />
+        </div>
+        <div class="panel-body visible-sm-block visible-xs-block">
+            <div data-ng-bind="vm.component.description.short" />
+
+        </div>
+
+        <div class="panel-footer">
+            <div class="container">
+                <div class="btn-group-xs" role="group" aria-label="Config">
+
+                    <button type="button" ng-class="{'btn': true, 'btn-default': vm.component.active, 'btn-warning': !vm.component.active, 'btn-sm': true}" ng-click="moduleStatus()">
+                        <span class="glyphicon " ng-class="{'glyphicon-ok-circle': vm.component.active, 'glyphicon-ban-circle': !vm.component.active }" aria-hidden="true"></span> Modul ist <span ng-if="vm.component.active" class="animate-if">Aktiv</span> <span ng-if="!vm.component.active" class="animate-if">Inactiv</span>
+                    </button>
+
+                    <button type="button" class="btn btn-default btn-sm" ng-click="moduleConfig()">
+                        <span class="glyphicon glyphicon-cog" aria-hidden="true"></span> Konfiguration
+                    </button>
+
+                </div>
+            </div>
+        </div>
+    </div-->
+
+
+
+    <div class="panel panel-default">
+        <!-- Default panel contents -->
+        <div class="panel-heading">
+            <p class="panel-title ">
+                <a href="#" editable-text="vm.component.name">{{ vm.component.name || 'empty' }}</a>
+            </p>
+        </div>
+
+        <div class="panel-body">
+            <div class="panel-body visible-md-block visible-lg-block">
+                <div data-ng-bind="vm.component.description.long" />
+            </div>
+            <div class="panel-body visible-sm-block visible-xs-block">
+                <div data-ng-bind="vm.component.description.short" />
+
+            </div>
+        </div>
+
+        <!-- List group -->
+        <ul class="list-group">
+            <li class="list-group-item">
+                <div class="col-sm-4">
+                Raum:
+                </div>
+                <span class="label label-info ">{{vm.component.location.room.name }}</span>
+            </li>
+
+            <li class="list-group-item">
+                <div class="col-sm-4">
+                    Plazierung:
+                </div>
+                <span class="label label-info ">{{vm.component.location.location }}</span>
+            </li>
+        </ul>
+
+        <div class="panel-footer">
+            <div class="container">
+                <div class="btn-group-xs" role="group" aria-label="Config">
+
+                    <button type="button" ng-class="{'btn': true, 'btn-default': vm.component.active, 'btn-warning': !vm.component.active, 'btn-sm': true}" ng-click="moduleStatus()">
+                        <span class="glyphicon " ng-class="{'glyphicon-ok-circle': vm.component.active, 'glyphicon-ban-circle': !vm.component.active }" aria-hidden="true"></span> Modul ist <span ng-if="vm.component.active" class="animate-if">Aktiv</span> <span ng-if="!vm.component.active" class="animate-if">Inactiv</span>
+                    </button>
+
+                    <button type="button" class="btn btn-default btn-sm" ng-click="moduleConfig()">
+                        <span class="glyphicon glyphicon-cog" aria-hidden="true"></span> Konfiguration
+                    </button>
+
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+</div>

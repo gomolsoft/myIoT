@@ -1,3 +1,5 @@
+/// <reference path="../../index.module.ts" />
+
 module myIoTapp {
   'use strict';
 

@@ -7,10 +7,19 @@ module myIoTapp {
       $stateProvider
         .state('home', {
           url: '/',
-          templateUrl: 'app/main/main.html',
-          controller: 'MainController',
+          templateUrl: 'app/start/start.html',
+          controller: 'StartController',
           controllerAs: 'main'
+        })
+
+        .state('room', {
+          url: '/room',
+          templateUrl: 'app/room/room.html',
+          controller: 'RoomController',
+          controllerAs: 'room'
         });
+
+      ;
 
       $urlRouterProvider.otherwise('/');
     }
