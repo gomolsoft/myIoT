@@ -38,7 +38,7 @@
         <!-- Default panel contents -->
         <div class="panel-heading">
             <p class="panel-title ">
-                <a href="#" editable-text="vm.component.name">{{ vm.component.name || 'empty' }}</a>
+                <a href="#" editable-text="vm.component.name">{{ vm.component.name || 'Leer' }}</a>
             </p>
         </div>
 
@@ -56,16 +56,16 @@
         <ul class="list-group">
             <li class="list-group-item">
                 <div class="col-sm-4">
-                Raum:
+                    Raum:
                 </div>
-                <span class="label label-info ">{{vm.component.location.room.name }}</span>
+                <span class="label label-info ">{{ vm.component.location.room.name }}</span>
             </li>
 
             <li class="list-group-item">
                 <div class="col-sm-4">
                     Plazierung:
                 </div>
-                <span class="label label-info ">{{vm.component.location.location }}</span>
+                <span class="label label-info ">{{ vm.component.location.location }}</span>
             </li>
         </ul>
 
