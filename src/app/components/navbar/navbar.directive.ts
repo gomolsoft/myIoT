@@ -26,5 +26,6 @@ module myIoTapp {
     constructor(moment: moment.MomentStatic) {
       this.relativeDate = moment(1437217698151).fromNow();
     }
+
   }
 }
