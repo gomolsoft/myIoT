@@ -38,7 +38,7 @@ module myIoTapp {
         }
 
         public dummyTest() {
-            this.restangular.one('device').post('devices').then( (data) => {
+            this.restangular.one('device/devices').get().then( (data) => {
                 this.authenticated = true;
                 console.log("suff: OK");
 

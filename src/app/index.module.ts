@@ -37,7 +37,7 @@ module myIoTapp {
 
     .config(['RestangularProvider',
         (RestangularProvider:restangular.IProvider) => {
-          RestangularProvider.setBaseUrl('http://localhost:8080');
+          RestangularProvider.setBaseUrl('http://mbp.fritz.box:8080');
         }
     ])
 
