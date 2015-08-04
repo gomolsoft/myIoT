@@ -4,7 +4,9 @@ module myIoTapp {
   export class RouterConfig {
     /** @ngInject */
     constructor($stateProvider: ng.ui.IStateProvider, $urlRouterProvider: ng.ui.IUrlRouterProvider, $httpProvider: ng.IHttpProvider) {
-      $httpProvider.defaults.headers.common["X-Requested-With"] = 'XMLHttpRequest';
+
+//      $httpProvider.defaults.headers.common["X-Requested-With"] = 'XMLHttpRequest';
+
 
       $stateProvider
         .state('home', {
@@ -24,8 +26,8 @@ module myIoTapp {
         .state('login', {
             url: '/login',
             templateUrl: 'app/user/login.html',
-            controller: 'RoomController',
-            controllerAs: 'room'
+            controller: 'LoginController',
+            controllerAs: 'us'
           });
 
       ;

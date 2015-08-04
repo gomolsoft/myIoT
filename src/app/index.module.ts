@@ -16,6 +16,8 @@
 
 /// <reference path="../app/components/iot/basic/baseComponent.directive.ts" />
 
+/// <reference path="../app/user/login.controller.ts" />
+
 
 declare var malarkey: any;
 declare var toastr: Toastr;
@@ -33,6 +35,12 @@ module myIoTapp {
     .config(Config)
     .config(RouterConfig)
 
+    .config(['RestangularProvider',
+        (RestangularProvider:restangular.IProvider) => {
+          RestangularProvider.setBaseUrl('http://localhost:8080');
+        }
+    ])
+
     .run(RunBlock)
 
     .service   ('githubContributor', GithubContributor)
@@ -41,6 +49,7 @@ module myIoTapp {
 
     .controller('MainController',    MainController)
     .controller('StartController',   StartController)
+    .controller('LoginController',   LoginController)
 
     .directive ('acmeNavbar',        acmeNavbar)
     .directive ('acmeMalarkey',      acmeMalarkey)
